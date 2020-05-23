@@ -7,7 +7,8 @@ var app = angular.module("fileManagerApp", [
 app.config(function ($routeProvider ,$locationProvider) {
  
 
-  
+  // Remove # from URL
+  $locationProvider.html5Mode(true);
 
   
   
