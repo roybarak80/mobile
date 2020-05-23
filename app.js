@@ -5,10 +5,9 @@ var app = angular.module("fileManagerApp", [
 ]);
 
 app.config(function ($routeProvider ,$locationProvider) {
-  var contentPath = 'app/content/';
+ 
 
-  // Remove # from URL
-  $locationProvider.html5Mode(true);
+  
 
   
   
