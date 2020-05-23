@@ -1,0 +1,26 @@
+body {
+  background: #EEEEEE !important;
+  background-color: #EEEEEE !important;
+}
+.custom-navbar {
+  background: #00c29b;
+  color: #fff;
+  box-shadow: 0px 2px 4px 2px #b0b0b0;
+}
+.custom-navbar a:hover {
+  color: #fff;
+}
+.sub-menu {
+  font-size: 1.25rem;
+  box-shadow: 0px 2px 4px 2px #b0b0b0;
+  background-color: #fff;
+  position: fixed;
+  top: 56px;
+  right: 0;
+  width: 100%;
+  z-index: 300;
+}
+.batch-item {
+  box-shadow: 0px 2px 4px 2px #b0b0b0;
+  background-color: #fff;
+}

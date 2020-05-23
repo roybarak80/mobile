@@ -1,82 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fileManagerApp">
 
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="">
+  <meta name="author"
+    content="">
+  <link rel="shortcut icon"
+    href="">
   <title>Bare - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link href="vendor/css/font-awesome-4.7.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    
+    <link href="vendor/css/angular-material/angular-material.min.css"
+    rel="stylesheet">
+  <link href="vendor/css/style.css"
+    rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand"
+        href="#">Listen Care - file uploader</a>
+      <button class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse"
+        id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link"
+              href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link"
+              href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link"
+              href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link"
+              href="#">Contact</a>
           </li>
         </ul>
       </div>
     </div>
+    
   </nav>
+  
+  
 
   <!-- Page Content -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul>
-        <input id="myFileInput" type="file" accept="image/*;capture=camera">
-
-      </div>
+    <div class="col-xs-12">
+      <div ng-view></div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-  var myInput = document.getElementById('myFileInput');
 
-function sendPic() {
-    var file = myInput.files[0];
 
-    // Send file here either by adding it to a `FormData` object 
-    // and sending that via XHR, or by simply passing the file into 
-    // the `send` method of an XHR instance.
-}
 
-myInput.addEventListener('change', sendPic, false);
-</script>
+  <script src="vendor/libs/angular/angular.min.js"></script>
+  <script src="vendor/libs/angular/angular-route.min.js"></script>
+  <script src="vendor/libs/angular-material/angular-material.min.js"></script>
+  <script src="vendor/libs/angular-material/angular-animate.min.js"></script>
+  <script src="vendor/libs/angular-material/angular-aria.min.js"></script>
+
+  <script src="vendor/js/app.js"></script>
+  <script src="vendor/js/home.controller.js"></script>
+
+  <!-- <script>
+    var myInput = document.getElementById('myFileInput');
+
+    function sendPic() {
+      var file = myInput.files[0];
+
+      // Send file here either by adding it to a `FormData` object 
+      // and sending that via XHR, or by simply passing the file into 
+      // the `send` method of an XHR instance.
+    }
+
+    myInput.addEventListener('change', sendPic, false);
+  </script> -->
 </body>
 
 </html>
